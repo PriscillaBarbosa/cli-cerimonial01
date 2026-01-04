@@ -1,0 +1,51 @@
+// src/scss/styles.scss
+
+// 1. Funções necessárias do Bootstrap
+@import "bootstrap/scss/functions";
+
+// 2. Nossas variáveis (sobrescrevem o padrão)
+@import "variables";
+
+// 3. Variáveis do Bootstrap
+@import "bootstrap/scss/variables";
+
+// 4. MAPAS (AQUI É O LUGAR CORRETO!)
+// O Maps precisa vir LOGO APÓS as variáveis e ANTES de todo o resto
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities"; 
+
+// 5. O restante do Bootstrap (Agora sim o Root vai funcionar)
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/transitions"; 
+@import "bootstrap/scss/utilities/api";
+
+
+// 6. Estilos específicos do layout
+body {
+  overflow-x: hidden;
+}
+
+.hero-section {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}

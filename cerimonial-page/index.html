@@ -1,13 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cerimonial-page</title>
+    <title>Eterno Amor | Cerimonial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">ETERNO AMOR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+      <div class="container">
+        <h1 class="display-3 fw-bold mb-4">Realizando Sonhos Inesquecíveis</h1>
+        <p class="lead mb-5">Assessoria completa e personalizada para o seu grande dia.</p>
+        <a href="#contato" class="btn btn-primary btn-lg px-5">Agendar Conversa</a>
+      </div>
+    </header>
+
+    <section id="servicos" class="section-padding">
+      <div class="container text-center">
+        <h2 class="mb-5">Nossos Serviços</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h3 class="h4 card-title mb-3">Assessoria Completa</h3>
+                <p class="card-text text-muted">Acompanhamento desde o planejamento inicial até o último minuto da festa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h3 class="h4 card-title mb-3">Dia da Noiva</h3>
+                <p class="card-text text-muted">Gestão exclusiva para garantir que você relaxe e brilhe.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h3 class="h4 card-title mb-3">Cerimonial do Dia</h3>
+                <p class="card-text text-muted">Coordenação profissional para que tudo saia perfeito no dia do evento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato" class="bg-dark text-white py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4">Vamos conversar?</h2>
+        <p class="mb-4">contato@eternoamor.com.br | (11) 99999-9999</p>
+        <small>&copy; 2024 Eterno Amor Cerimonial. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

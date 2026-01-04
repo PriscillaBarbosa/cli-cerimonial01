@@ -1,0 +1,20 @@
+// src/scss/_variables.scss
+
+// Fontes (vamos importar no HTML depois)
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-serif: 'Playfair Display', serif;
+
+// Cores Personalizadas
+$primary: #d4af37; // Dourado Clássico
+$secondary: #f8f5f2; // Off-white (Creme suave)
+$dark: #2c3e50; // Azul marinho profundo (para texto)
+$light: #ffffff;
+
+// Sobrescrevendo variáveis do Bootstrap
+$body-bg: $secondary;
+$body-color: $dark;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-serif;
+
+// Ajustes de botões
+$btn-border-radius: 0; // Botões quadrados são mais elegantes/modernos
