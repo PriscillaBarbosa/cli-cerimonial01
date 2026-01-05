@@ -1,77 +1,131 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eterno Amor | Cerimonial</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  </head>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Amor Eterno | Assessoria e Cerimonial </title>
+    
+    <meta name="description" content="Assessoria e Cerimonial de Casamentos, 15 anos e Comemorações">
+    <meta name="keywords" content="Assessoria especializada em Casamentos, 15 anos, comemorações, cerimonial BH">
+    <meta name="author" content="Amor Eterno">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Amor Eterno | Assessoria e Cerimonial">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="">
+    <meta property="og:site_name" content="Amor Eterno">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preload" as="image" href="">
+
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="" sizes="32x32">
+    <link rel="canonical" href="">
+        
+</head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm my-4">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">ETERNO AMOR</a>
+        <img src="./src/assets/img/Amor-Eterno.svg" alt="Logo" class="logo-img">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#assessoria">Assessoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cerimonial">Cerimonial</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
             <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
           </ul>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </nav>
 
-    <header id="home" class="hero-section">
-      <div class="container">
-        <h1 class="display-3 fw-bold mb-4">Realizando Sonhos Inesquecíveis</h1>
-        <p class="lead mb-5">Assessoria completa e personalizada para o seu grande dia.</p>
-        <a href="#contato" class="btn btn-primary btn-lg px-5">Agendar Conversa</a>
+    <hero>
+      <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/assets/img/hero1.jpg" class="d-block w-100 hero-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/img/hero2.jpg" class="d-block w-100 hero-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/assets/img/hero3.jpg" class="d-block w-100 hero-img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
       </div>
-    </header>
+    </hero>
 
-    <section id="servicos" class="section-padding">
-      <div class="container text-center">
-        <h2 class="mb-5">Nossos Serviços</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-3">
-              <div class="card-body">
-                <h3 class="h4 card-title mb-3">Assessoria Completa</h3>
-                <p class="card-text text-muted">Acompanhamento desde o planejamento inicial até o último minuto da festa.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-3">
-              <div class="card-body">
-                <h3 class="h4 card-title mb-3">Dia da Noiva</h3>
-                <p class="card-text text-muted">Gestão exclusiva para garantir que você relaxe e brilhe.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-3">
-              <div class="card-body">
-                <h3 class="h4 card-title mb-3">Cerimonial do Dia</h3>
-                <p class="card-text text-muted">Coordenação profissional para que tudo saia perfeito no dia do evento.</p>
-              </div>
-            </div>
-          </div>
+    <section class="assessoria mx-5 my-5 d-flex justify-content-center align-items-center flex-column">
+      <h1 class="italiana-regular mb-0">ASSESSORIA</h1>
+      <p class="">Feita Sob Medida</p>
+      <p class="w-50">Damos rumo aos seus desejos e técnica às suas ideias. Aqui, cada detalhe é planejado com carinho e precisão para criar momentos que ninguém vai esquecer.</p>
+      <div class="d-flex justify-content-center align-items-center gap-5">
+        <img src="./src/assets/img/section1.jpg" alt="" class="section-img w-25">
+        <div class="d-flex justify-content-center align-items-center flex-column w-25">
+          <p>Criamos celebrações autênticas, respeitando a essência e as crenças de cada casal. </p>
+          <p>Estamos ao seu lado do planejamento à festa, garantindo uma coordenação impecável, marcada pelo acolhimento e pela elegância em cada momento.</p>
+          <p>Transformamos sonhos em realidade unindo sensibilidade e excelência na execução.</p>
         </div>
       </div>
     </section>
 
+    <section class="assessoria mx-5 my-5 d-flex justify-content-start align-items-center flex-column me-5">
+      <div class="d-flex justify-content-start align-items-center gap-5">
+        <img src="./src/assets/img/section1.jpg" alt="" class="section-img w-25">
+        <div class="d-flex justify-content-start align-items-center flex-column w-25 mx-5">
+          <div class="d-flex flex-column justify-content-start align-items-center">
+            <h1 class="italiana-regular mb-0">ASSESSORIA</h1>
+            <p class="">Feita Sob Medida</p>
+          </div>
+          <p>Criamos celebrações autênticas, respeitando a essência e as crenças de cada casal. </p>
+          <p>Estamos ao seu lado do planejamento à festa, garantindo uma coordenação impecável, marcada pelo acolhimento e pela elegância em cada momento.</p>
+          <p>Transformamos sonhos em realidade unindo sensibilidade e excelência na execução.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="assessoria mx-5 my-5 d-flex justify-content-end align-items-center flex-column me-5">
+      <div class="d-flex justify-content-end align-items-center gap-5">
+        <img src="./src/assets/img/section1.jpg" alt="" class="section-img w-25">
+        <div class="d-flex justify-content-end align-items-center flex-column w-25 mx-5">
+          <div class="d-flex flex-column justify-content-end align-items-center">
+            <h1 class="italiana-regular mb-0">ASSESSORIA</h1>
+            <p class="">Feita Sob Medida</p>
+          </div>
+          <p>Criamos celebrações autênticas, respeitando a essência e as crenças de cada casal. </p>
+          <p>Estamos ao seu lado do planejamento à festa, garantindo uma coordenação impecável, marcada pelo acolhimento e pela elegância em cada momento.</p>
+          <p>Transformamos sonhos em realidade unindo sensibilidade e excelência na execução.</p>
+        </div>
+      </div>
+    </section>
+      
+    
+
     <footer id="contato" class="bg-dark text-white py-5 text-center">
       <div class="container">
-        <h2 class="mb-4">Vamos conversar?</h2>
+        <h2 class="mb-4 italiana-regular">Vamos conversar?</h2>
         <p class="mb-4">contato@eternoamor.com.br | (11) 99999-9999</p>
         <small>&copy; 2024 Eterno Amor Cerimonial. Todos os direitos reservados.</small>
       </div>
     </footer>
 
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="./src/assets/js/main.js"></script>
   </body>
 </html>
