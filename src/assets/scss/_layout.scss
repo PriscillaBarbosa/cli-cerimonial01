@@ -1,0 +1,63 @@
+
+section h1.titulo {
+    font-size: 3rem;
+}
+
+.assessoria-subTitle {
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+img.section-img {
+    height: 30vh !important;     
+    width: auto !important;       
+    max-width: 30vw !important;   
+    object-fit: contain;          
+}
+
+/* Cor de fundo da seção */
+.fale-conosco-section {
+    background-color: #e0e0e0; /* Cinza claro do fundo */
+}
+
+/* Estilo dos Labels (Títulos dos campos) */
+.custom-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #777; /* Cinza médio para o texto do label */
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo dos Inputs e Textarea */
+.custom-input {
+    background-color: #ffffff;
+    border: none; /* Remove a borda padrão */
+    border-radius: 0; /* Remove o arredondamento, deixando quadrado */
+    padding: 0.75rem 1rem; /* Espaçamento interno */
+    box-shadow: none; /* Remove a sombra padrão do Bootstrap ao focar */
+}
+
+/* Remove o destaque azul padrão ao clicar no campo */
+.custom-input:focus {
+    box-shadow: none;
+    border: 1px solid #ccc; /* Opcional: adiciona uma borda cinza sutil ao focar */
+}
+
+/* Estilo do Botão Enviar */
+.btn-enviar {
+    background-color: #808080; /* Cinza escuro do botão */
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0; /* Botão quadrado */
+    padding: 0.75rem 3rem; /* Botão mais largo */
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #666666; /* Cor um pouco mais escura ao passar o mouse */
+    color: white;
+}
