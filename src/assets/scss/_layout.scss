@@ -1,63 +1,205 @@
 
+//Define a estrutura macro do site, ou seja, como as grandes seções se posicionam na tela.
+//O que incluir: Estilos para o Grid principal, Flexbox de containers, Header, Footer, Sidebar e sistemas de colunas.
+
+.navbar {
+    background: $btn-bg;
+    border: none;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: $cor-titulo;
+
+    &:hover {
+        color: $cor-hover;
+    }
+}
+
 section h1.titulo {
     font-size: 3rem;
+    color: $cor-titulo;
 }
 
 .assessoria-subTitle {
     font-size: 1rem;
     letter-spacing: .2rem;
+    color: $cor-textos;
 }
 
 img.section-img {
-    height: 30vh !important;     
+    height: 55vh !important;     
     width: auto !important;       
     max-width: 30vw !important;   
     object-fit: contain;          
 }
 
-/* Cor de fundo da seção */
 .fale-conosco-section {
-    background-color: #e0e0e0; /* Cinza claro do fundo */
+    background-color: $cor-secundaria; 
 }
 
-/* Estilo dos Labels (Títulos dos campos) */
 .custom-label {
     text-transform: uppercase;
     font-size: 0.8rem;
-    color: #777; /* Cinza médio para o texto do label */
+    color: $cor-primaria; 
     margin-bottom: 0.5rem;
     letter-spacing: 0.5px;
 }
 
 /* Estilo dos Inputs e Textarea */
 .custom-input {
-    background-color: #ffffff;
-    border: none; /* Remove a borda padrão */
-    border-radius: 0; /* Remove o arredondamento, deixando quadrado */
-    padding: 0.75rem 1rem; /* Espaçamento interno */
-    box-shadow: none; /* Remove a sombra padrão do Bootstrap ao focar */
+    background-color: $cor-primaria;
+    border: none; 
+    border-radius: 0; 
+    padding: 0.75rem 1rem; 
+    box-shadow: none; 
 }
 
-/* Remove o destaque azul padrão ao clicar no campo */
 .custom-input:focus {
     box-shadow: none;
-    border: 1px solid #ccc; /* Opcional: adiciona uma borda cinza sutil ao focar */
+    border: 1px solid $borda-focus; 
 }
 
-/* Estilo do Botão Enviar */
 .btn-enviar {
-    background-color: #808080; /* Cinza escuro do botão */
-    color: white;
+    background: $btn-hover; 
+    color: $btn-color;
     text-transform: uppercase;
-    border: none;
-    border-radius: 0; /* Botão quadrado */
-    padding: 0.75rem 3rem; /* Botão mais largo */
+    border: 1px solid $btn-color;
+    border-radius: 1rem;
+    padding: 0.75rem 3rem; 
     font-size: 0.9rem;
     letter-spacing: 1px;
-    transition: background-color 0.3s;
+    transition: ease background-color 0.3s;
+
+    &:hover {
+    background:$btn-bg;
+    color: $btn-hover;
+    }
 }
 
-.btn-enviar:hover {
-    background-color: #666666; /* Cor um pouco mais escura ao passar o mouse */
-    color: white;
+
+
+.fale-conosco-section {
+    background-color: $bg-faleconosco;
+    color: $cor-primaria;
 }
+
+
+:root {
+      --primary-color: #8B5CF6;
+      --secondary-color: #EC4899;
+    }
+
+    .contact-section {
+      padding: 80px 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .form-control, .form-select {
+      background-color: white;
+      color: black;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 12px 16px;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.15);
+    }
+
+    .btn-submit {
+      background: $btn-bg;
+      border: none;
+      color: $cor-titulo;
+      padding: 14px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 10px;
+      width: 100%;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .alert {
+      border-radius: 10px;
+      border: none;
+    }
+
+    .info-card {
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 30px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: start;
+      margin-bottom: 25px;
+    }
+
+    .info-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.3rem;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .info-content h5 {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .info-content p {
+      color: #666;
+      margin: 0;
+    }
+
+    .spinner-border-sm {
+      width: 1rem;
+      height: 1rem;
+      border-width: 0.15em;
+    }

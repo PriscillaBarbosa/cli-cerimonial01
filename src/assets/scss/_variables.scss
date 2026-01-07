@@ -1,1 +1,16 @@
+//armazena valores que serão reutilizados.
+//O que incluir: Variáveis de cores (Hex, RGB), fontes (family, sizes), 
+//espaçamentos fixos (paddings/margins padrão), breakpoints de media queries e z-index.
 
+$cor-primaria: #fbfbfb;
+$cor-secundaria: #e0e0e0;
+$cor-titulo:#323131;
+$cor-textos: #454443;
+$cor-hover: #000;
+
+$borda-focus: #ccc;
+$bg-faleconosco: #666666;
+
+$btn-bg: linear-gradient(to right, #e9e6df 35%, #c8c7c3);
+$btn-color: #ffffff;
+$btn-hover: #666666;

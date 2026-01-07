@@ -1,0 +1,102 @@
+//Contém as regras globais e o "reset" do projeto. 
+//É o código que se aplica a todo o site, independentemente da página ou componente.
+//Reset de CSS (box-sizing), estilos padrão para tags básicas (html, body, a, img), 
+//tipografia padrão (tamanho do corpo do texto) e seletores de utilitários globais.
+
+
+// 6. Estilos específicos do layout
+body {
+  overflow-x: hidden;
+  background: $btn-bg;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.texto {
+    color: $cor-textos;
+}
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    color: white;
+  }
+
+  &:hover {
+    background-color: #128C7E; 
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  // Animação de pulso 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #25D366;
+    opacity: 0.6;
+    animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+// Responsivo para telas menores
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+

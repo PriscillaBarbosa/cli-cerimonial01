@@ -1,23 +1,12 @@
-// src/scss/styles.scss
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-
-
 // 1. Funções necessárias do Bootstrap
 @import "bootstrap/scss/functions";
 
-// 2. Nossas variáveis (sobrescrevem o padrão)
-@import "variables";
-
-// 3. Variáveis do Bootstrap
+// 2. Variáveis do Bootstrap
 @import "bootstrap/scss/variables";
-
-// 4. MAPAS (AQUI É O LUGAR CORRETO!)
-// O Maps precisa vir LOGO APÓS as variáveis e ANTES de todo o resto
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities"; 
 
-// 5. O restante do Bootstrap (Agora sim o Root vai funcionar)
+// 3. O restante do Bootstrap
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
@@ -29,59 +18,18 @@
 @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/transitions"; 
 @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/forms/labels"; 
+@import "bootstrap/scss/forms/form-control"; 
+@import "bootstrap/scss/forms/floating-labels"; 
+
+// 4. Utilities (depois dos componentes)
+@import "bootstrap/scss/utilities";
 @import "bootstrap/scss/utilities/api";
 
+// 5. Fonte externa
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
-// 6. Estilos específicos do layout
-body {
-  overflow-x: hidden;
-}
-
-.section-padding {
-  padding: 5rem 0;
-}
-
-.italiana-regular {
-  font-family: "Italiana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-// 1. Configuração base das imagens
-.carousel-item {
-  // Garante que a transição ocorra na opacidade, não no movimento
-  transition: opacity 2.5s ease-in-out !important; 
-  position: absolute !important; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; // Começa invisível
-  display: block !important; // Força o display block para anular o 'none' padrão
-  z-index: 0;
-}
-
-// 2. Configuração da imagem interna
-.carousel-item img {
-  width: 100%;
-  height: 85vh !important; // Altura elegante
-  object-fit: cover;
-  object-position: top center;
-}
-
-// 3. O estado ATIVO (A imagem que está aparecendo)
-.carousel-item.active {
-  position: relative !important; // O ativo dita a altura do container
-  opacity: 1 !important; // Torna visível
-  z-index: 1;
-}
-
-// 4. Previne o "flash" branco entre as trocas
-// Isso garante que a próxima imagem já esteja pronta enquanto a outra some
-.carousel-item-next.carousel-item-start,
-.carousel-item-prev.carousel-item-end {
-  opacity: 1 !important;
-}
+// 6. Estilos personalizados
+@import "variables";
+@import "base";
+@import "layout";
