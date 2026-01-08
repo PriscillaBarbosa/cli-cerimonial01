@@ -31,8 +31,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top my-4">
       <div class="container">
-        <img src="./src/assets/img/Amor-Eterno.svg" alt="Logo" class="logo-img">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="./src/assets/img/Amor-Eterno.svg" alt="Logo Amor Eterno Assessoria" 
+            width="180" 
+            height="45" class="logo-img">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menu de navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -45,52 +47,60 @@
           </ul>
         </div>
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Visite nosso perfil no Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </nav>
 
-    <hero>
+    <hero class="mb-5">
       <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./src/assets/img/hero1.jpg" class="d-block w-100 hero-img" alt="...">
+            <img src="./src/assets/img/hero1.webp" width="1920" height="1080" fetchpriority="high" class="d-block w-100 hero-img" alt="Casamento ao ar livre">
           </div>
           <div class="carousel-item">
-            <img src="./src/assets/img/hero2.jpg" class="d-block w-100 hero-img" alt="...">
+            <img src="./src/assets/img/hero2.webp" width="1920" height="1080" class="d-block w-100 hero-img" alt="Casamento ao ar livre">
           </div>
           <div class="carousel-item">
-            <img src="./src/assets/img/hero3.jpg" class="d-block w-100 hero-img" alt="...">
+            <img src="./src/assets/img/hero3.webp" width="1920" height="1080" class="d-block w-100 hero-img" alt="Casamento ao ar livre">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" aria-label="Imagem anterior">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" aria-label="Próxima imagem">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
     </hero>
 
-    <section class="assessoria mx-5 my-5 d-flex justify-content-start align-items-center flex-column">
-      <h1 class="italiana-regular mb-0">ASSESSORIA</h1>
-      <p class="">FEITA SOB MEDIDA</p>
-      <p class="texto w-50">Damos rumo aos seus desejos e técnica às suas ideias. Aqui, cada detalhe é planejado com carinho e precisão para criar momentos que ninguém vai esquecer.</p>
-      <div class="d-flex justify-content-start align-items-center gap-5 mb-5">
-        <div class="d-flex justify-content-start align-items-center flex-column w-25">
+    <section id="assessoria" class="assessoria mx-5 my-5 d-flex justify-content-start align-items-center flex-column">
+      <h1 class="italiana-regular mt-5 mb-0" data-aos="fade-up">ASSESSORIA</h1>
+      <p class="" data-aos="fade-up" data-aos-delay="100">FEITA SOB MEDIDA</p>
+      
+      <p class="texto w-50" data-aos="fade-up" data-aos-delay="200">
+        Damos rumo aos seus desejos e técnica às suas ideias. Aqui, cada detalhe é planejado com carinho e precisão para criar momentos que ninguém vai esquecer.
+      </p>
+
+      <div class="d-flex justify-content-center align-items-center gap-5 mb-5">
+        <div class="d-flex justify-content-center align-items-center flex-column w-25" data-aos="fade-right" data-aos-delay="300">
           <p class="texto">Criamos celebrações autênticas, respeitando a essência e as crenças de cada casal. </p>
           <p class="texto">Estamos ao seu lado do planejamento à festa, garantindo uma coordenação impecável, marcada pelo acolhimento e pela elegância em cada momento.</p>
           <p class="texto">Transformamos sonhos em realidade unindo sensibilidade e excelência na execução.</p>
         </div>
-        <img src="./src/assets/img/section1.jpg" alt="" class="section-img w-25 mb-5">
+        
+        <img src="./src/assets/img/section1.webp" width="1920" height="1080" loading="lazy" alt="" class="section-img w-25 mb-5" data-aos="fade-left" data-aos-delay="400">
       </div>
     </section>
 
-    <section class="assessoria mx-5 my-5 d-flex justify-content-center align-items-center flex-column me-5">
+    <section id="cerimonial" class="assessoria mx-5 mb-5 d-flex justify-content-center align-items-center flex-column me-5">
       <div class="d-flex justify-content-center align-items-center gap-5 mb-5">
-        <img src="./src/assets/img/section2.jpg" alt="" class="section-img w-25 mb-5">
-        <img src="./src/assets/img/section2.1.jpg" alt="" class="section-img w-25 mb-5">
-        <div class="d-flex justify-content-center align-items-center flex-column w-25 mx-5">
+        <img src="./src/assets/img/section2.webp" width="1920" height="1080" loading="lazy" alt="" class="section-img w-25 mb-5" data-aos="fade-up">
+        
+        <img src="./src/assets/img/section2.1.webp" width="1920" height="1080" loading="lazy" alt="" class="section-img w-25 mb-5" data-aos="fade-up" data-aos-delay="150">
+        
+        <div class="d-flex justify-content-center align-items-center flex-column w-25 mx-5" data-aos="fade-up" data-aos-delay="300">
           <div class="d-flex flex-column justify-content-center align-items-center">
             <h1 class="italiana-regular mb-0">nossa ESSÊNCIA ÚNICA</h1>
           </div>
@@ -101,10 +111,11 @@
       </div>
     </section>
 
-    <section class="assessoria mx-5 my-5 d-flex justify-content-end align-items-center flex-column me-5">
-      <div class="d-flex justify-content-end align-items-center gap-5 mb-5">
-        <img src="./src/assets/img/section3.jpg" alt="" class="section-img w-25 mb-5">
-        <div class="d-flex justify-content-end align-items-center flex-column w-25 mx-5">
+    <section id="sobre" class="assessoria mx-5 d-flex justify-content-center align-items-center flex-column me-5">
+      <div class="d-flex justify-content-center align-items-center gap-5 mb-5">
+        <img src="./src/assets/img/section3.webp" width="1920" height="1080" loading="lazy" alt="" class="section-img w-25 mb-5" data-aos="zoom-in" data-aos-duration="1200">
+        
+        <div class="d-flex justify-content-end align-items-center flex-column w-25 mx-5" data-aos="fade-left" data-aos-delay="200">
           <div class="d-flex flex-column justify-content-end align-items-center">
             <h1 class="italiana-regular mb-0">SOBRE NÓS</h1>
             <p class="texto">QUEM FAZ ACONTECER</p>
@@ -115,100 +126,39 @@
       </div>
     </section>
 
-    <section class="assessoria mx-5 my-5 d-flex justify-content-center align-items-center flex-column me-5">
-      <div class="d-flex justify-content-center align-items-center gap-5 mb-5">
-        <img src="./src/assets/img/section4.jpg" alt="" class="section-img w-25 mb-5">
-        <img src="./src/assets/img/section5.jpg" alt="" class="section-img w-25 mb-5">
-        <img src="./src/assets/img/section5.2.jpg" alt="" class="section-img w-25 mb-5">
+    <section class="assessoria mx-5 mb-5 d-flex justify-content-center align-items-center flex-column">
+      <div class="d-flex justify-content-center align-items-center gap-5">
+        <img src="./src/assets/img/section4.webp" width="1920" height="1080" oading="lazy" alt="" class="eventos-img w-25 mb-5" data-aos="fade-up" data-aos-delay="0">
+        <img src="./src/assets/img/section5.webp" width="1920" height="1080" loading="lazy" alt="" class="eventos-img w-25 mb-5" data-aos="fade-up" data-aos-delay="150">
+        <img src="./src/assets/img/section5.2.webp" width="1920" height="1080" loading="lazy" alt="" class="eventos-img w-25 mb-5" data-aos="fade-up" data-aos-delay="300">
       </div>
     </section>
 
-    <section class="contact-section">
-      <div class="container">
-      <div class="row justify-content-center">
-        <!-- Formulário -->
-        <div class="col-lg-8 col-xl-7">
-          <div class="form-container">
-            <div id="alertContainer"></div>
-
-            <form id="contactForm" novalidate>
-              <div class="row g-3">
-                <!-- Nome -->
-                <div class="col-md-6">
-                  <label for="name" class="form-label">Nome Completo *</label>
-                  <input type="text" class="form-control" id="name" required>
-                  <div class="invalid-feedback">Por favor, informe seu nome.</div>
-                </div>
-
-                <!-- E-mail -->
-                <div class="col-md-6">
-                  <label for="email" class="form-label">E-mail *</label>
-                  <input type="email" class="form-control" id="email" required>
-                  <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
-                </div>
-
-                <!-- Telefone -->
-                <div class="col-md-6">
-                  <label for="phone" class="form-label">Telefone *</label>
-                  <input type="tel" class="form-control" id="phone" placeholder="(00) 00000-0000" required>
-                  <div class="invalid-feedback">Por favor, informe seu telefone.</div>
-                </div>
-
-                <!-- Tipo de Evento -->
-                <div class="col-md-6">
-                  <label for="eventType" class="form-label">Tipo de Evento *</label>
-                  <select class="form-select" id="eventType" required>
-                    <option value="">Selecione...</option>
-                    <option value="casamento">Casamento</option>
-                    <option value="aniversario">Aniversário</option>
-                    <option value="corporativo">Evento Corporativo</option>
-                    <option value="formatura">Formatura</option>
-                    <option value="infantil">Festa Infantil</option>
-                    <option value="outro">Outro</option>
-                  </select>
-                  <div class="invalid-feedback">Por favor, selecione o tipo de evento.</div>
-                </div>
-
-                <!-- Data do Evento -->
-                <div class="col-md-6">
-                  <label for="eventDate" class="form-label">Data Prevista do Evento</label>
-                  <input type="date" class="form-control" id="eventDate">
-                </div>
-
-                <!-- Número de Convidados -->
-                <div class="col-md-6">
-                  <label for="guests" class="form-label">Número de Convidados</label>
-                  <input type="number" class="form-control" id="guests" placeholder="Ex: 100" min="1">
-                </div>
-
-                <!-- Mensagem -->
-                <div class="col-12">
-                  <label for="message" class="form-label">Conte-nos mais sobre seu evento *</label>
-                  <textarea class="form-control" id="message" rows="4" placeholder="Descreva sua visão, preferências e necessidades..." required></textarea>
-                  <div class="invalid-feedback">Por favor, conte-nos sobre seu evento.</div>
-                </div>
-
-                <!-- Botão de Envio -->
-                <div class="col-12 mt-4">
-                  <button type="submit" class="btn btn-submit" id="submitBtn">
-                    <span id="btnText">Enviar Solicitação</span>
-                    <span id="btnSpinner" class="d-none">
-                      <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                      Enviando...
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+    <section class="d-flex flex-column justify-content-center align-items-center mb-5">
+      <h2 class="mb-5 italiana-regular" data-aos="fade-in">INSTAGRAM</h2>
+      
+      <div class="d-flex justify-content-center align-items-center gap-1">
+        <img src="./src/assets/img/img-insta/img1.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-1" data-aos="fade-up" data-aos-delay="0">
+        <img src="./src/assets/img/img-insta/img2.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-1" data-aos="fade-up" data-aos-delay="100">
+        <img src="./src/assets/img/img-insta/img3.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-1" data-aos="fade-up" data-aos-delay="200">
       </div>
+      
+      <div class="d-flex justify-content-center align-items-center gap-1">
+        <img src="./src/assets/img/img-insta/img4.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-1" data-aos="fade-up" data-aos-delay="100">
+        <img src="./src/assets/img/img-insta/img5.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-1" data-aos="fade-up" data-aos-delay="200">
+        <img src="./src/assets/img/img-insta/img6.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-1" data-aos="fade-up" data-aos-delay="300">
+      </div>
+      
+      <div class="d-flex justify-content-center align-items-center gap-1 mb-5">
+        <img src="./src/assets/img/img-insta/img7.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-5" data-aos="fade-up" data-aos-delay="200">
+        <img src="./src/assets/img/img-insta/img8.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-5" data-aos="fade-up" data-aos-delay="300">
+        <img src="./src/assets/img/img-insta/img9.webp" width="1920" height="1080" loading="lazy" alt="" class="insta-img mb-5" data-aos="fade-up" data-aos-delay="400">
       </div>
     </section>
       
     <footer id="contato" class="bg-dark text-white py-5 text-center">
       <div class="container">
-        <h2 class="mb-4 italiana-regular">Vamos conversar?</h2>
+        <h2 class="mb-1 italiana-regular">Eterno Amor</h2>
         <p class="mb-4">contato@eternoamor.com.br | (11) 99999-9999</p>
         <small>&copy; 2024 Eterno Amor Cerimonial. Todos os direitos reservados.</small>
       </div>

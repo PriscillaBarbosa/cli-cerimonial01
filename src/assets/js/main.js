@@ -1,17 +1,32 @@
-// src/js/main.js
-
-// Importa estilos
+// 1. Importa estilos do projeto
 import '../scss/styles.scss'
 
-// Importa funcionalidades do Bootstrap (apenas o necessário ou tudo)
-import * as bootstrap from 'bootstrap'
+// 2. Importa o CSS do AOS 
+import 'aos/dist/aos.css';
 
-// Exemplo de código moderno: Smooth scroll para links internos
+// 3. Importa funcionalidades
+import * as bootstrap from 'bootstrap';
+import AOS from 'aos'; // Importa a biblioteca JS
+
+// 4. Inicia o AOS 
+AOS.init({
+  duration: 1000,    // Duração de 1 segundo
+  easing: 'ease-out', // Começa rápido, termina suave
+  once: true,        // Anima só na primeira vez que desce
+  offset: 100,       // Dispara um pouco antes de chegar no elemento
+});
+
+// 5. Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
