@@ -3,7 +3,7 @@
 //O que incluir: Estilos para o Grid principal, Flexbox de containers, Header, Footer, Sidebar e sistemas de colunas.
 
 .navbar {
-    background: $btn-bg;
+   // background: $btn-bg;
     border: none;
     box-shadow: none;
 }
@@ -28,10 +28,11 @@ section h1.titulo {
 }
 
 img.section-img {
-    height: 55vh !important;     
-    width: auto !important;       
-    max-width: 30vw !important;   
-    object-fit: contain;          
+  height: auto !important; 
+  max-height: 400px; 
+  width: 100% !important; 
+  object-fit: cover !important; 
+  margin-bottom: 1.5rem; 
 }
 
 .fale-conosco-section {
@@ -97,9 +98,8 @@ img.section-img {
     }
 
     .form-label {
-      font-weight: 600;
-      color: #333;
       margin-bottom: 8px;
+      
     }
 
     .form-control, .form-select {
@@ -202,10 +202,16 @@ img.section-img {
       background: $bg2;
     }
 
-    .insta-img,
     .eventos-img {
-      height: 30vh !important;     
+      //height: 30vh !important;     
       width: auto !important;       
-      max-width: 30vw !important;   
+      //max-width: 30vw !important;   
+      object-fit: contain;
+    }
+
+    .insta-img {
+      height: auto !important;     
+      width: auto !important;       
+     max-width: 20vw !important;   
       object-fit: contain;
     }
