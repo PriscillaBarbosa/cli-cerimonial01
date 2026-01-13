@@ -16,66 +16,45 @@
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
-@import "bootstrap/scss/transitions"; 
+@import "bootstrap/scss/transitions";
 @import "bootstrap/scss/carousel";
-@import "bootstrap/scss/forms/labels"; 
-@import "bootstrap/scss/forms/form-control"; 
-@import "bootstrap/scss/forms/floating-labels"; 
+@import "bootstrap/scss/forms/labels";
+@import "bootstrap/scss/forms/form-control";
+@import "bootstrap/scss/forms/floating-labels";
 
 // 4. Utilities (depois dos componentes)
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/utilities/api";
 
 // 5. Fonte externa
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 
 // 6. Estilos personalizados
 @import "variables";
 @import "base";
 @import "layout";
 
-
 @media (max-width: 768px) {
-    #cerimonial, #sobre {
-        display: block !important;
-        min-height: 0 !important; 
-        height: auto !important;     
-        padding-top: 2rem !important; 
-        padding-bottom: 2rem !important; 
-    }
-    
-    #cerimonial .col-12 {
-        margin-bottom: 1.5rem !important;
-    }
+  #cerimonial,
+  #sobre {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
 
-    #cerimonial .row {
-        height: auto !important;
-        margin-bottom: 0 !important;
-        align-items: flex-start !important; 
-    }
+  #cerimonial .col-12 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  #cerimonial .row {
+    height: auto !important;
+    margin-bottom: 0 !important;
+    align-items: flex-start !important;
+  }
 }
 
 body {
-    background-color: #f8f9fa;
-  }
-
-  .contact-form {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-  }
-
-  .contact-form label {
-    font-weight: 700;
-  }
-
-  .contact-form .form-control {
-    border-radius: 5px;
-  }
-
-  .contact-form textarea {
-    resize: none;
-  }
-
- 
+  background-color: #f8f9fa;
+}

@@ -1,8 +1,7 @@
-//Contém as regras globais e o "reset" do projeto. 
+//Contém as regras globais e o "reset" do projeto.
 //É o código que se aplica a todo o site, independentemente da página ou componente.
-//Reset de CSS (box-sizing), estilos padrão para tags básicas (html, body, a, img), 
+//Reset de CSS (box-sizing), estilos padrão para tags básicas (html, body, a, img),
 //tipografia padrão (tamanho do corpo do texto) e seletores de utilitários globais.
-
 
 // 6. Estilos específicos do layout
 body {
@@ -24,7 +23,7 @@ body {
 }
 
 .texto {
-    color: $cor-textos;
+  color: $cor-textos;
 }
 
 /* Padrão (Mobile): Largura total */
@@ -44,7 +43,7 @@ body {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -61,19 +60,19 @@ body {
   }
 
   &:hover {
-    background-color: #128C7E; 
+    background-color: #128c7e;
     transform: scale(1.1);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
 
-  // Animação de pulso 
+  // Animação de pulso
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #25D366;
+    background-color: #25d366;
     opacity: 0.6;
     animation: pulse 2s infinite;
   }
@@ -109,12 +108,11 @@ body {
   }
 }
 
-
 // 1. Configuração base das imagens
 .carousel-item {
   // Garante que a transição ocorra na opacidade, não no movimento
-  transition: opacity 2.5s ease-in-out !important; 
-  position: absolute !important; 
+  transition: opacity 2.5s ease-in-out !important;
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -134,8 +132,8 @@ body {
 
 // 3. O estado ATIVO (A imagem que está aparecendo)
 .carousel-item.active {
-  position: relative !important; 
-  opacity: 1 !important; 
+  position: relative !important;
+  opacity: 1 !important;
   z-index: 1;
 }
 
@@ -146,123 +144,121 @@ body {
   opacity: 1 !important;
 }
 
-
 .footer {
-    background: linear-gradient(to right, #1a1c20, #2c3e50);
-    color: #ffffff;
-    padding: 70px 0 30px;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(to right, #1a1c20, #2c3e50);
+  color: #ffffff;
+  padding: 70px 0 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-about {
-    color: #a4b5c6;
-    margin-bottom: 25px;
-    line-height: 1.6;
+  color: #a4b5c6;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 .footer h5 {
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 25px;
-    position: relative;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
 }
 
 .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links li {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-links a {
-    color: #a4b5c6;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
+  color: #a4b5c6;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .footer-links a:hover {
-    color: #3498db;
-    transform: translateX(5px);
+  color: #3498db;
+  transform: translateX(5px);
 }
 
 .social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .footer-newsletter {
-    position: relative;
-    margin-top: 20px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .footer-newsletter input {
-    padding: 12px 15px;
-    border-radius: 25px;
-    border: none;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    outline: none;
-    padding-right: 50px;
+  padding: 12px 15px;
+  border: none;
+  width: 100%;
+  background: $cor-primaria;
+  color: #fff;
+  outline: none;
+  padding-right: 50px;
 }
 
 .footer-newsletter input::placeholder {
-    color: #a4b5c6;
+  color: #a4b5c6;
 }
 
 .newsletter-btn {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    bottom: 5px;
-    width: 40px;
-    border-radius: 50%;
-    background: $bg2;
-    border: none;
-    color: #fff;
-    transition: all 0.3s ease;
-    font-size: 12px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 50px;
+  background: $bg2;
+  border: none;
+  color: $cor-hover;
+  transition: all 0.3s ease;
+  font-size: 12px;
 }
 
 .newsletter-btn:hover {
-    background: $cor-textos;
+  background: $cor-hover;
+  color: $cor-primaria;
 }
 
 .footer-bottom {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    color: #a4b5c6;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #a4b5c6;
 }
 
 .footer-bottom-links {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .footer-bottom-links a {
-    color: #a4b5c6;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #a4b5c6;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
-    color: $cor-primaria;
+  color: $cor-primaria;
 }
 
 @media (max-width: 768px) {
-    .footer-section {
-        margin-bottom: 40px;
-    }
+  .footer-section {
+    margin-bottom: 40px;
+  }
 }
